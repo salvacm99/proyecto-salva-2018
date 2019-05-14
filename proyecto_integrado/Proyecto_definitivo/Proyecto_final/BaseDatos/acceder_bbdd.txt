@@ -1,0 +1,15 @@
+Para acceder a mysql desde la terminal 
+
+1- nos conectamos a la maquina de aws
+2- cd /opt/bitnami/mysql/bin
+3- mysql -u root -p
+
+
+Comandos basicos
+
+
+show datebases;->ver bases de datos
+use database nombre;-> entrar a una base de datos
+
+show tables;->ver tablas
+use table nombre;->entrar a una tabla

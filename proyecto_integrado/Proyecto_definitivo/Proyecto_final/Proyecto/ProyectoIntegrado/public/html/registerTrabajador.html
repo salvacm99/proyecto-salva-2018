@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Truequefacil</title>
+    <link href="../css/form.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../Imagenes/favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/listadoUsuarios.js"></script>
+  </head>
+  <body>
+
+    <div class="form-style-10">
+  <h1>Registro Trabajador</h1>
+  <form action="../../src/models/recibir/registrar_user.php" method="post">
+      <div class="inner-wrap">
+          <label>NIF <input type="text" name="NIF" id="NIF" value="" required /></label>
+          <label>Nombre <input type="text" maxlength="20" id="Nombre" name="Nombre" value=""  required /></label>
+          <label>Apellidos <input type="text" maxlength="30" id="Apellidos" name="Apellidos" value=""  required /></label>
+          <label>Teléfono <input type="number"  maxlength="9" id="Telefono" name="Telefono" value="" required/></label>
+          <label>Email <input type="email" name="Email" id="Email" value="" required /></label>
+          <label>Direccion <input type="text" name="Direccion" id="Direccion" value="" required /></label>
+          <label>Contraseña <input type="password" name="Contrasenya" id="Contrasenya" value="" required /></label>
+          <label>Confirmar Contraseña <input type="password" name="re_contrasenya" id="re_contrasenya" value="" required /></label>
+
+          <input type="submit" onclick="comprobarContra()" name="registro" id="registro">
+          <input type="reset" id="limpiar" value="Limpiar">
+          <input style="float:right" type="button" value="Volver" onclick="window.location.href='../index.php'">
+      </div>
+      <div class="button-section">
+       <span class="privacy-policy">
+       <input type="checkbox" required name="field7">Aceptar términos y condiciones de uso.
+       <script type='text/javascript' src='../js/comprobar_contra.js'></script>
+       </span>
+      </div>
+  </form>
+  </div>
+  </body>
+</html>
